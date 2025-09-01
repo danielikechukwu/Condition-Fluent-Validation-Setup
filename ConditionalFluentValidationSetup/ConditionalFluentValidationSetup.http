@@ -1,0 +1,6 @@
+@ConditionalFluentValidationSetup_HostAddress = http://localhost:5175
+
+GET {{ConditionalFluentValidationSetup_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
