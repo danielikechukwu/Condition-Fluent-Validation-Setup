@@ -7,7 +7,45 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net8.0\ConditionalFluentValidationSetup.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net8.0\ConditionalFluentValidationSetup.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\ConditionalFluentValidationSetup.csproj.nuget.dgspec.json" />
+    <Content Include="obj\Debug\net8.0\rpswa.dswa.cache.json" />
+    <Content Include="obj\Debug\net8.0\staticwebassets.removed.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\net8.0\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="obj\Debug\net8.0\refint\" />
+    <Folder Include="obj\Debug\net8.0\ref\" />
+    <Folder Include="obj\Debug\net8.0\staticwebassets\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\ConditionalFluentValidationSetup.csproj.nuget.g.props" />
+    <None Include="obj\ConditionalFluentValidationSetup.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\net8.0\ConditionalFluentValidationSetup.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net8.0\ConditionalFluentValidationSetup.assets.cache" />
+    <None Include="obj\Debug\net8.0\ConditionalFluentValidationSetup.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net8.0\ConditionalFluentValidationSetup.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\project.nuget.cache" />
   </ItemGroup>
 
 </Project>
