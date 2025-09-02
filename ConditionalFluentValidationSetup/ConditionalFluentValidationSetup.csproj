@@ -32,7 +32,6 @@
   <ItemGroup>
     <Folder Include="bin\Debug\net8.0\" />
     <Folder Include="Controllers\" />
-    <Folder Include="DTOs\" />
     <Folder Include="obj\Debug\net8.0\refint\" />
     <Folder Include="obj\Debug\net8.0\ref\" />
     <Folder Include="obj\Debug\net8.0\staticwebassets\" />
