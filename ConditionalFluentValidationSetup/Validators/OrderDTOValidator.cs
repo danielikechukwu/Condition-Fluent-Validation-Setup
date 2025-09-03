@@ -51,11 +51,12 @@ namespace ConditionalFluentValidationSetup.Validators
             });
 
             // If PaymentMode is CreditCard, then CreditCardNumber must be provided
-            RuleFor(order => order.CreditCardNumber)
-                .NotEmpty()
-                .When(order => order.PaymentMode == "CreditCard")
-                .WithMessage("CreditCardNumber is required for Credit Card payments.");
+            //RuleFor(order => order.CreditCardNumber)
+            //    .NotEmpty()
+            //    .When(order => order.PaymentMode == "CreditCard")
+            //    .WithMessage("CreditCardNumber is required for Credit Card payments.");
 
+            // Alternative
             // Another way : If PaymentMode is CreditCard, then CreditCardNumber must be provided
             When(order => order.PaymentMode == "CreditCard", () =>
             {
@@ -66,11 +67,12 @@ namespace ConditionalFluentValidationSetup.Validators
 
             // For non-cash payments, ensure Discount is within an acceptable range (10% to 30%).
             // Using 'Unless' to skip this rule if PaymentMode is "Cash"
-            RuleFor(order => order.Discount)
-                .InclusiveBetween(10, 30)
-                .Unless(order => order.PaymentMode == "Cash")
-                .WithMessage("Discount must be between 10% and 30% for non-cash payments.");
+            //RuleFor(order => order.Discount)
+            //    .InclusiveBetween(10, 30)
+            //    .Unless(order => order.PaymentMode == "Cash")
+            //    .WithMessage("Discount must be between 10% and 30% for non-cash payments.");
 
+            // Alternative
             // Another way to use Unless Method
             Unless(order => order.PaymentMode == "Cash", () =>
             {
